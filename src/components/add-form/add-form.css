@@ -1,0 +1,28 @@
+/* neoorphismgenerator.io */
+.add-form {
+    border-radius: 11px;
+    background: linear-gradient(145deg, #6e3dc4, #5d33a5);
+    box-shadow: 27px 27px 31px #4a2984,
+        -27px -27px 31px #8449ea;
+
+    margin: 6px 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 60vh;
+}
+
+.form-item {
+    margin: 12px 0px;
+    width: 70%;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.form-item label {
+    background-color: rgb(161, 161, 161);
+    padding: 2px 12px;
+    border-radius: 0px 4px 4px 0px;
+}

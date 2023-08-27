@@ -11,7 +11,7 @@ export const expenseReducer = (state = initialState, action) => {
                 //return rest of the state as it is by spread operator
                 ...state,
                 //and add expense
-                expenseList : [...state.expenseList, action.data]
+                expenseList : [...state.expenseList, action.data],  // got the data from action and add it to the array expenseList[]
             }         
 
         }

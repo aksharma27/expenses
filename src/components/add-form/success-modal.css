@@ -1,0 +1,64 @@
+.modal-inner {
+    display: flex;
+    flex-direction: column;
+    /* By defaul flex is in row direction*/
+    align-items: center;
+}
+
+.modal-inner {
+    font-weight: 500;
+    font-size: large;
+}
+
+.take-home-button {
+    border: 2px solid #11f511;
+    padding: 4px 8px;
+    border-radius: 4px;
+    /* font-weight: bold; */
+    display: flex;
+    color: #11f511;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.take-home-button:hover {
+    background-color: #67f95ce3;
+    color: #6739B7;
+    /* font-weight: 600; */
+    transition: 0.5s;
+    /* cursor: pointer; */
+}
+
+.take-home-button svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.added-image {
+    height: 360px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .added-image {
+        height: 310px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .added-image {
+        height: 240px;
+    }
+
+    .modal-inner {
+        font-weight: 500;
+        font-size: medium;
+    }
+
+    .modal-inner {
+        font-weight: 500;
+        font-size: medium;
+    }
+}

@@ -12,4 +12,4 @@ const AddExpense = () => {
   )
 }
 
-export default AddExpense
+export default AddExpense;
