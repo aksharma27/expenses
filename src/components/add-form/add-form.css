@@ -17,12 +17,111 @@
     margin: 12px 0px;
     width: 70%;
     padding: 4px;
-    border-radius: 6px;
+    border-radius: 3px;
     background-color: white;
 }
 
 .form-item label {
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(99, 99, 99);
     padding: 2px 12px;
     border-radius: 0px 4px 4px 0px;
+}
+
+.form-add-button button:hover {
+    transform: scale(0.96);
+    transition: .5s;
+}
+
+.form-item input {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 70%;
+}
+
+.category-container-parent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.category {
+    position: relative;
+    width: 40%;
+}
+
+.category-dropdown {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    color: black;
+    max-resolution: 12px 0px;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.category-dropdown svg {
+    display: flex;
+    align-items: center;
+}
+
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* display: flex;
+    position: absolute; */
+    /* flex-direction: column; */
+    width: 100%;
+}
+
+.category-item {
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+.category-item img {
+    height: 32px;
+    margin-right: 20px;
+}
+
+.form-add-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-add-button button {
+    display: flex;
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.form-add-button div svg {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .form-item {
+        width: 100%;
+    }
+
+    .form-item input {
+        width: 70%;
+    }
+
+    .amount-input {
+        width: 50% !important;
+    }
+
+    .category {
+        width: 65%;
+    }
 }

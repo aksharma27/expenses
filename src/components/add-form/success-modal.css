@@ -10,6 +10,22 @@
     font-size: large;
 }
 
+.modal-inner button {
+    background-color: #67f95ce3;
+    border-radius: 2px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 88%;
+    margin-top: -20px;
+}
+
+.modal-inner button:hover {
+    transform: scale(0.94);
+    transition: .2s;
+}
+
 .take-home-button {
     border: 2px solid #11f511;
     padding: 4px 8px;
@@ -25,8 +41,9 @@
 .take-home-button:hover {
     background-color: #67f95ce3;
     color: #6739B7;
+    transform: scale(0.95);
     /* font-weight: 600; */
-    transition: 0.5s;
+    transition: 0.37s;
     /* cursor: pointer; */
 }
 
@@ -44,6 +61,17 @@
 @media only screen and (max-width: 1024px) {
     .added-image {
         height: 310px;
+    }
+
+    .modal-inner button {
+        background-color: #67f95ce3;
+        border-radius: 2px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 98%;
+        margin-top: -32px;
     }
 }
 

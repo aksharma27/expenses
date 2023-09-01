@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom/client";
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header/index";
 import Home from "./pages/home/Home";

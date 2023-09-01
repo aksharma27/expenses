@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css';
-import credit from './credit.png';
+// import credit from './credit.png';
 
 const Header = () => {
   return (
