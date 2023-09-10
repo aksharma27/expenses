@@ -1,4 +1,4 @@
-import {ADD_EXPENSE} from '../action-types/expenses';
+import {ADD_EXPENSE, DELETE_EXPENSE} from '../action-types/expenses';
 
 const initialState = { //all the initial state of variables/objects which we'll be passing
     expenseList: [], //all the expenses which we'll add by the add button in our application, later we'll replace it will local storage to keep the state even after reloading
@@ -14,6 +14,16 @@ export const expenseReducer = (state = initialState, action) => {
                 expenseList : [...state.expenseList, action.data],  // got the data from action and add it to the array expenseList[]
             }         
 
+        }
+        case DELETE_EXPENSE : {
+            const {data} = action;
+                const updatedList = state.expenseList.filter(
+                item => item.createdAt !== data.createdAt
+            );
+            return {
+                ...state,
+                expenseList: updatedList,
+            }
         }
         default: 
             return state;
