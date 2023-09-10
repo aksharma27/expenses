@@ -1,12 +1,19 @@
 import React, { useState } from 'react'
 import './topfold.css';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { searchExpense } from '../../redux/actions/expenses';
 
 const TopFold = () => {
     const [query, setQuery] = useState("");
 
+
+    const dispatch = useDispatch();
+
     const handleQuery = (event) => {
         setQuery(event.target.value);
+        //set query as target.value
+        dispatch(searchExpense(event.target.value));    //whatever we'll type in searchbar, will be passed in our state and result will be displayed, but add this in expense list first
     }
 
   return (

@@ -1,4 +1,4 @@
-import {ADD_EXPENSE} from '../action-types/expenses';
+import {ADD_EXPENSE, SEARCH_EXPENSE} from '../action-types/expenses';
 import { DELETE_EXPENSE } from '../action-types/expenses';
 
 export const addExpense = (data) => {       //data is passed through params, and is going to reducers, which parse it as an array
@@ -16,3 +16,10 @@ export const deleteExpense = (data) => {
         data
     }
 };
+
+export const  searchExpense = (query) => {
+    return {
+        type : SEARCH_EXPENSE,
+        query,
+    }
+}
