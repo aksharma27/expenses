@@ -4,12 +4,14 @@ import moment from 'moment/moment';
 import { useDispatch } from 'react-redux';
 import { deleteExpense } from '../../redux/actions/expenses';
 
-const Card = ({item, logo}) => {
+const Card = ({item, notifySuccess}) => {
   const time = moment(item.caretedAt).fromNow();      //fromNow() is the method momentjs gives to show x moments ago in our app
   const dispatch = useDispatch(); //for delete function -> delete icon
 
   const handleDelete = () => {
     dispatch(deleteExpense(item));
+    // once the item is deleted, we'll call notifySucess() method from the params
+    notifySuccess();
   }
 
 

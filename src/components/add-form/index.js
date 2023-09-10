@@ -41,7 +41,7 @@ const AddForm = () => {
     const handleSubmit = () => {
       // if title or amount or category is empty then give error message 
       if (title === '' || amount === '' || !category) {
-          const notify = () => toast('Please enter valid data!');
+          const notify = () => toast.error('Please enter valid data!');
           notify();
           return;
       } 
@@ -56,8 +56,7 @@ const AddForm = () => {
         //ELSE DO THIS : addexpense from reducer function
         //when submit is clicked, this data object is created and dispatch the AddExpense func and pass data as parameter
         // 1:38:45
-        setModalOpen(true);
-        
+        setModalOpen(true); 
     };
 
   return (
@@ -65,7 +64,7 @@ const AddForm = () => {
 
         {/* TOAST AFTER ADDING THE CATEGORY */}
         <ToastContainer
-position="bottom-center"
+position="top-right"
 autoClose={1500}
 hideProgressBar={false}
 newestOnTop={false}
