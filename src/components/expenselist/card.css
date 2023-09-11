@@ -9,6 +9,10 @@
     color: black;
 }
 
+.delete-icon:hover {
+    cursor : pointer;
+}
+
 .card-image {
     height: 40px;
 }
