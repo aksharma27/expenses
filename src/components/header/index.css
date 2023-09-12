@@ -15,8 +15,8 @@
 .header-logo {
     display: flex;
     align-items: center;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 38px;
+    font-weight: 600;
 }
 
 .header-logo svg {
