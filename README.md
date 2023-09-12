@@ -5,7 +5,7 @@
 # Stacks used : 
     - ReactJS
     - npm package manager
-    - NodeJS
+    - NodeJS 
 
 # Open to suggestions : go an and create issues if you want.
 
